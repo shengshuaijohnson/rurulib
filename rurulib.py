@@ -29,6 +29,9 @@ def get_score(prediction, lables):
 
 
 def fillna_with_popular(df, col):
+    '''
+    col : str type
+    '''
     df[col] = df[col].fillna(df[col].mode()[0])
 
 if __name__ == '__main__':
